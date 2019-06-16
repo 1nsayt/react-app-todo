@@ -21,7 +21,7 @@ export default class AddTodoFrom extends Component {
                     className="form__input"
                     ref={this._title} 
                     type="text"
-                    placeholder="what to do..." />
+                    placeholder="what to do..." required/>
                 <button className="btn">Add</button>
             </form> 
         )
