@@ -4,10 +4,10 @@ import Item from './Item'
 export default class TodoList extends Component{
 
     render(){
-        const {todoList} = this.props;
+        const {todoList,onRemove} = this.props;
         return (
             <div>
-                {todoList.map((item)=> <Item title={item.title}/>)}
+                {todoList.map((item)=> <Item key={item.id} title={item.title} id={item.id} onRemove={onRemove}/>)}
             </div>
         )
     }
