@@ -9,7 +9,7 @@ export default class TodoList extends Component{
             <ul className="todoList">
                 
                 {
-                    (todoList.length === 0)?<p>There empty list...</p>:
+                    (todoList.length === 0)?<p>There's empty list...</p>:
                     todoList.map((item)=> <Item key={item.id} title={item.title} id={item.id} onRemove={()=>onRemove(item.id)}/>)}
             </ul>
         )
