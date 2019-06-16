@@ -2,11 +2,11 @@ import React,{Component} from 'react'
 
 export default class Item extends Component{
     render(){
-        const {title,onRemove,id} = this.props;
+        const {title,onRemove} = this.props;
         return (
-            <li>
-                <button onClick={()=>onRemove(id)}>X</button>
-                <h1>{title}</h1>
+            <li className="todo">
+                <button onClick={onRemove} className="btn-todo">X</button>
+                <span>{title}</span>
             </li>
         )
     }

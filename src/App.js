@@ -30,7 +30,7 @@ export default class App extends Component{
     render(){
       const {todoList} = this.state;
         return (
-          <div className="App">
+          <div className="container">
             <AddTodoForm newTodo={this.addTodo}/>
             <TodoList todoList={todoList} onRemove={this.removeTodo}/>
           </div>

@@ -16,12 +16,13 @@ export default class AddTodoFrom extends Component {
     }
     render(){
         return(
-            <form onSubmit={this.submit}>
+            <form className="form" onSubmit={this.submit}>
                 <input 
+                    className="form__input"
                     ref={this._title} 
                     type="text"
                     placeholder="what to do..." />
-                <button>Add</button>
+                <button className="btn">Add</button>
             </form> 
         )
     }
